@@ -131,7 +131,7 @@ body {
   font-size: 13.5px;
   font-weight: 600;
 }
-.row { display: grid; grid-template-columns: 1fr 148px; gap: 10px; }
+.row { display: grid; grid-template-columns: 1fr; gap: 10px; }
 .input, .select {
   width: 100%;
   height: 46px;

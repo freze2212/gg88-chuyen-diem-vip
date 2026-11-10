@@ -10,8 +10,6 @@ const guest = localStorage.getItem("gg88_guest") || "user" + Math.floor(10000 + 
 localStorage.setItem("gg88_guest", guest);
 $("user-chip").textContent = guest;
 
-fillSiteSelect($("from-site"), BRAND);
-fillSiteSelect($("to-site"), BRAND);
 
 const lines = ["⚡ <b>duyloi204</b> vừa nhận 2.000.000 điểm", "💎 <b>hoang123</b> vừa chuyển 100.000 điểm",
   "🔥 <b>ngocanh88</b> vừa nhận 300.000 điểm", "🎁 <b>phong161008</b> vừa nạp 500.000 điểm",
@@ -38,8 +36,8 @@ initTurnstile();
 
 function values() {
   return {
-    fromUser: $("from-user").value.trim(), fromSite: $("from-site").value,
-    toUser: $("to-user").value.trim(), toSite: $("to-site").value,
+    fromUser: $("from-user").value.trim(), fromSite: BRAND,
+    toUser: $("to-user").value.trim(), toSite: BRAND,
     amount: Number($("amount").value),
   };
 }

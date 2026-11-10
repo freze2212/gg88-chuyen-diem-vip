@@ -1,4 +1,4 @@
-name = "lp-gg88-chuyendiem"
+name = "gg88-chuyen-diem-vip"
 compatibility_date = "2024-01-01"
 pages_build_output_dir = "."
 
@@ -6,7 +6,7 @@ pages_build_output_dir = "."
 ENVIRONMENT = "production"
 TURNSTILE_SITEKEY = "0x4AAAAAAFSBKEwkLqhg0A8Z"
 
-# Shared KV namespace (Freze). Data is isolated under the key "transfers_gg88".
+# Shared KV namespace (Freze). Data is isolated under the key "transfers_gg88_vip".
 [[kv_namespaces]]
 binding = "XOAMA_KV"
 id = "ae45bcd2386d4fd9a98473173784607b"
