@@ -195,14 +195,3 @@ $("transfer-form").addEventListener("submit", async (e) => {
   }
 });
 
-$("btn-history").onclick = () => {
-  const list = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
-  $("history-list").innerHTML = list.length ? list.map((i) => `
-    <div class="hist-item">
-      <strong>${esc(i.fromUser)} (${siteTag(i.fromSite)}) → ${esc(i.toUser)} (${siteTag(i.toSite)})</strong>
-      <div>${fmt(i.amount)} điểm</div>
-      <span class="tag ${i.result === "success" ? "approved" : "rejected"}">${i.result === "success" ? "Thành công" : "Chưa đủ điều kiện"}</span>
-    </div>`).join("") : '<p class="empty">Chưa có giao dịch nào.</p>';
-  $("history-panel").classList.add("show");
-};
-$("btn-close-history").onclick = () => $("history-panel").classList.remove("show");
